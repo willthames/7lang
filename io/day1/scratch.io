@@ -22,7 +22,7 @@ Bobbins garbage
 Animal := Object clone do (
   say ::= nil
   legs ::= nil
-  println := method ((type .. " has " .. legs  .. " legs and says " .. say) println)
+  println := method ((self type .. " has " .. legs  .. " legs and says " .. say) println)
 )
 
 Duck := Animal clone setSay("Quack!") setLegs(2)
